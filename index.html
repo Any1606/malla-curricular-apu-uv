@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Curricular Interactiva - Administración Pública</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <header>
+        <h1>Malla Curricular Administración Pública</h1>
+        <p>Progreso académico interactivo. Haz clic en un ramo para aprobarlo.</p>
+        <div class="progress-container">
+            <span>Avance total: <strong id="progress-text">0%</strong></span>
+            <button onclick="resetProgress()" class="reset-btn">Reiniciar Malla</button>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div id="malla-container" class="malla-grid">
+            </div>
+    </div>
+
+    <div id="modal-motivacional" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modal-title">¡Ramo Aprobado!</h3>
+            <p id="modal-message">Mensaje aquí</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
